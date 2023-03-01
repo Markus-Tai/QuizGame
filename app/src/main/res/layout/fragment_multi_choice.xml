@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MultiChoiceFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="20dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <!--        Part 2: Include a TextView to display the question and 4 Buttons
+                            to display the 4 choices the player can select from. -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/multi_choice_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Question? Question? Question? Question?"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:layout_marginHorizontal="16dp"/>
+
+
+            <Button
+                android:id="@+id/choice_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 1"
+                android:layout_marginTop="16dp"/>
+            <Button
+                android:id="@+id/choice_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 2"
+                android:layout_marginTop="16dp"/>
+            <Button
+                android:id="@+id/choice_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 3"
+                android:layout_marginTop="16dp"/>
+            <Button
+                android:id="@+id/choice_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choice 4"
+                android:layout_marginTop="16dp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
